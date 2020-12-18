@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite hostname="ATMECSINLT-711" name="com.atmecs.openmrs.testscripts.RegisterPatientTest" tests="1" failures="1" timestamp="18 Dec 2020 12:55:54 GMT" time="153.189" errors="0">
+  <testcase name="validatePatientRegistrationAndMerging" time="135.432" classname="com.atmecs.openmrs.testscripts.RegisterPatientTest">
+    <failure type="org.openqa.selenium.NoSuchElementException" message="Cannot locate an element using xpath=//i[@class=&amp;apos;icon-hdd&amp;apos;]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &amp;apos;3.141.59&amp;apos;, revision: &amp;apos;e82be7d358&amp;apos;, time: &amp;apos;2018-11-14T08:17:03&amp;apos;
+System info: host: &amp;apos;ATMECSINLT-711&amp;apos;, ip: &amp;apos;192.168.63.1&amp;apos;, os.name: &amp;apos;Windows 10&amp;apos;, os.arch: &amp;apos;amd64&amp;apos;, os.version: &amp;apos;10.0&amp;apos;, java.version: &amp;apos;1.8.0_261&amp;apos;
+Driver info: driver.version: RemoteWebDriver">
+      <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=//i[@class='icon-hdd']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ATMECSINLT-711', ip: '192.168.63.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.atmecs.openmrs.utils.CommonUtils.findsWebelement(CommonUtils.java:21)
+	at com.atmecs.openmrs.utils.CommonUtils.clickElement(CommonUtils.java:74)
+	at com.atmecs.openmrs.pages.RegisterPatient.mergePatientData(RegisterPatient.java:110)
+	at com.atmecs.openmrs.testscripts.RegisterPatientTest.validatePatientRegistrationAndMerging(RegisterPatientTest.java:22)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+... Removed 22 stack frames]]>
+    </failure>
+  </testcase>
+</testsuite>

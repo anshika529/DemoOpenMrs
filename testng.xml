@@ -1,0 +1,42 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name = "Regression Testing">
+
+   <test name = "ValidatePatientDetails">
+      <classes>
+         <class name = "com.atmecs.openmrs.testscripts.LoginTest" />
+      </classes>
+   </test>
+  
+   <test name = "validatePatientRegistrationAndMerging">
+      <classes>
+         <class name = "com.atmecs.openmrs.testscripts.RegisterPatientTest" />
+      </classes>
+   </test>
+  
+</suite>  
+
+<!--  <suite name="Suite" thread-count="2" parallel="tests">
+
+
+	<test name="Chrome Test">
+		<parameter name="browser" value="chrome">
+			<classes>
+				
+ <class name = "com.atmecs.openmrs.testscripts.LoginTest" />
+    <class name = "com.atmecs.openmrs.testscripts.RegisterPatientTest" />
+			</classes>
+		</parameter>
+	</test> 
+	<test name="Firefox Test">
+		<parameter name="browser" value="firefox">
+			<classes>
+				 <class name = "com.atmecs.openmrs.testscripts.LoginTest" />
+    <class name = "com.atmecs.openmrs.testscripts.RegisterPatientTest" />
+				
+			</classes>
+		</parameter>
+	</test> 
+</suite> 
+-->

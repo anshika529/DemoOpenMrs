@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite hostname="ATMECSINLT-711" name="com.atmecs.openmrs.testscripts.LoginTest" tests="1" failures="0" timestamp="18 Dec 2020 12:53:21 GMT" time="36.174" errors="0">
+  <testcase name="validateAllTheDetailsOfthePatient" time="14.461" classname="com.atmecs.openmrs.testscripts.LoginTest"/>
+</testsuite>
