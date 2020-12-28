@@ -36,7 +36,13 @@ public class LoginPage extends TestBase {
 	}
 	public void searchAndValidatePatients() {
 		
-		
+		commonUtils.clickElement(props.getValue("FindPatientRecord"));
+		commonUtils.verifyMsg(commonUtils.elementGetText(props.getValue("FindpatientTitle")),props.getValue("FindPatientPageTitle"), "FindPatientPageTitleAssertion");
+		commonUtils.sendkeys(props.getValue("SearchPatient"), props.getValue("PatientID"));
+		commonUtils.isDisplayed(commonUtils.DynamicXpath(props.getValue("PatientName")),"PatientName");
+		commonUtils.isDisplayed(commonUtils.DynamicXpath(props.getValue("Gender")),"Gender");
+		commonUtils.isDisplayed(commonUtils.DynamicXpath(props.getValue("Age")),"Age");
+		commonUtils.isDisplayed(commonUtils.DynamicXpath(props.getValue("BirthDate")),"PatientName");
 	
 		
 	}

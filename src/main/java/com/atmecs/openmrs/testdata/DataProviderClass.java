@@ -9,5 +9,11 @@ import com.atmecs.openmrs.constants.Constants;
 
 public class DataProviderClass {
 	
-	
+	@DataProvider(name = "Data")
+	public static Object[][] getData() throws IOException {
+		ExcelData xls = new ExcelData(Constants.EXCEL_DATA_PATH);
+		Object[][] data = xls.readExcelData("LoginData");
+		return data;
+
+	}
 }
